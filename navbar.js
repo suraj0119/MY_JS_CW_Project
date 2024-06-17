@@ -16,7 +16,7 @@ function addNavbarToPage() {
         `;
   } else {
     loginSectionHTML = `
-            <a href="login.html" class="login-nav-btn flex-div">
+            <a href="index.html" class="login-nav-btn flex-div">
                 <span id="login">Login</span>
             </a>
         `;
@@ -25,12 +25,12 @@ function addNavbarToPage() {
   
   nav_parent.innerHTML = `
     <div class="logo">
-      <a href="../SAP-Sultans_056/index.html"><img src="../SAP-Sultans_056/Assets/Web_Logo.png" alt="Logo" width="60px" style="border-radius: 9999px; margin: 0;" ></a>
+      <a href="main.html"><img src="./Assets/Web_Logo.png" alt="Logo" width="60px" style="border-radius: 9999px; margin: 0;" ></a>
     </div>
     <ul class="nav-menu">
-        <a href="../SAP-Sultans_056/index.html"><i class="fa-solid fa-box-open"></i> Home</a>
-        <a href="#"><i class="fa-solid fa-music"></i> Songs</a>
-        <a href="#"><i class="fa-solid fa-info-circle"></i> About</a>
+        <a href="./main.html"><i class="fa-solid fa-box-open"></i> Home</a>
+        <a href="./main.html"><i class="fa-solid fa-music"></i> Songs</a>
+        <a href="./main.html"><i class="fa-solid fa-info-circle"></i> About</a>
     </ul>
     <div class="login-nav-cont">
         <div id="search-data-div"></div>
@@ -42,7 +42,7 @@ function addNavbarToPage() {
 function logout() {
   localStorage.setItem("isLoggedIn", "false");
   localStorage.setItem("currentUser", "");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
 addNavbarToPage();
